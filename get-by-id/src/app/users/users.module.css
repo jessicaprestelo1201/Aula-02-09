@@ -1,0 +1,176 @@
+.container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.loadingWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 20px;
+}
+
+.loadingText {
+    color: #5a6c7d;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.controlsWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1000;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.userCard {
+    width: 280px;
+    height: 320px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.userCard:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.userName {
+    margin: 0 0 12px 0;
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.userEmail {
+    color: #5a6c7d;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.userPhone {
+    color: #7f8c8d;
+    margin: 6px 0 0 0;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .cardsContainer {
+        gap: 20px;
+    }
+
+    .userCard {
+        width: 260px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .controlsWrapper {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .cardsContainer {
+        gap: 15px;
+    }
+
+    .userCard {
+        width: 240px;
+        height: 280px;
+    }
+
+    .cardContent {
+        padding: 25px 15px;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .userName {
+        font-size: 1.1rem;
+    }
+}
+
+
